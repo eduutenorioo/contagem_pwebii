@@ -6,44 +6,112 @@
     <title>Prefeitura de Contagem</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<style>
+    /* Carrossel */
+.carrossel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.carrossel-slide {
+    text-align: center;
+}
+
+.carrossel-slide img {
+    display: block;
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border: 3px solid #007bff;
+    margin: auto;
+}
+
+.carrossel-slide p {
+    text-align: center;
+    font-style: italic;
+}
+
+.carrossel-btn {
+    font-size: 2em;
+    background: none;
+    border: 1px solid #007bff;
+    cursor: pointer;
+    color: #007bff;
+    padding: 0 10px;
+}
+
+.carrossel-dots {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.dot-ativo {
+    background: #007bff;
+}
+
+/* Notícias */
+.noticias-lista {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.noticia-item {
+    margin: 10px 0;
+}
+
+.noticia-fonte {
+    font-size: 0.82em;
+    color: #888;
+}
+
+/* História */
+#historia-texto {
+    display: none;
+    margin-top: 10px;
+}
+</style>
+
 <body>
-    <div class="container">
-        <h1>Prefeitura de Contagem</h1> 
-    </div>
+    <section class="titulo">
+        <h1>Prefeitura de Contagem</h1>
+    </section>
 
-<h1>História de Contagem</h1>
-    <p></p>
-    <button>Ler Mais</button>
-<h2><img src="./img/Itaú_Power_Shopping_em_Contagem_(MG).jpg" alt=""></h2>
-    
-<h1>Pontos Turísticos</h1>
-    <img src="./img/images.jpeg" alt="">
-    <a href="#">></a>
-<h1>Notícias</h1>
-    <p><a href="https://portal.contagem.mg.gov.br/portal/noticias/0/3/83651/contagem-avanca-com-plataforma-para-monitorar-plano-climatico-municipal/">
-        Prefeitura de Contagem</a></p>
-    </p><a href="OTEMPO">
-            Via Expressa motofaixa</a></p>
-    <p><a href="Prefeitura de Contagem"> Mobilidade INtegrada</a></p>
-    <img src="" alt="">
-    
-    <button>Veja Mais</button>
-<h1>Reclamações</h1>
-<p>Digite aqui suas queixas do seu bairro</p>
-<textarea name="" id=""></textarea>
-<p>para enviar foto do local, envie pelo telefone (31) 97306-1251</p>
+    <section class="contagem">
+        <!-- JS -->
+    </section>
 
+    <section class="turismo">
+        <!-- JS -->
+    </section>
 
+    <section class="Notícias">
+        <!-- JS -->
+    </section>
 
+    <section class="reclame">
+        <h2>Reclamações</h2>
+        <p>Digite aqui queixas sobre seu bairro</p>
+        <textarea id="reclameaq" style="width:100%;height:100px;"></textarea>
+        <br>
+        <button id="btn-enviar-reclamacao">Enviar Reclamação</button>
+        <p id="feedback-reclamacao" style="display:none;font-weight:bold;"></p>
+        <p>Para enviar fotos do local, use o WhatsApp. Telefone: (31) 9 7306-1251</p>
+    </section>
 
-
-
-
-
-
-
-
-
-<script></script>
+    <script src="script.js"></script>
 </body>
 </html>
